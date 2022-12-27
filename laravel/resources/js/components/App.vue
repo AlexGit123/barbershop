@@ -2,7 +2,9 @@
 
     <body>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous" />
+        <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">The Shop</a>
@@ -14,7 +16,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="About">About</a>
+                            <span>
+                                <a class="nav-link" href="About">About</a>
+                                <router-link to="/appointment">Appointment</router-link>
+                            </span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" tabindex="-1">Appointment</a>
@@ -23,21 +28,27 @@
                 </div>
             </div>
         </nav>
+        <!--Components-->
+        <router-view></router-view>
         <Dashboard></Dashboard>
+        <div v-if="type === 'appointment'">
+            <Appointment></Appointment>
+        </div>
     </body>
 </template>
 <script>
 import Dashboard from '/resources/js/components/Dashboard.vue'
 import Appointment from '/resources/js/components/Appointment.vue'
-import About from '/resources/js/components/About.vue'
 export default {
     name: 'App',
     components: {
         Dashboard,
+        Appointment
     }
 }
 </script>
 <style scoped>
+
 </style>
 
 
