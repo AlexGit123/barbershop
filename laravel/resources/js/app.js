@@ -1,5 +1,6 @@
-import './bootstrap';
-import {createApp} from 'vue'
-import App from '/Users/alexdoerfer/code/barbershop-1/laravel/resources/js/components/App.vue'
+import "./bootstrap";
+import { createApp } from "vue";
+import router from "./router";
+import App from "./components/App.vue";
 
-createApp(App).mount("#app")
+createApp(App).use(router).mount("#app");

@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/{any}', function () {
+    return view('welcome'); // Replace 'index' with the name of your main Vue.js template file
+})->where('any', '.*');
