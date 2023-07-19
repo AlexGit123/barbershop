@@ -1,5 +1,5 @@
 <template>
-    <h1>When would you like to make an appointment?</h1>
+    <h1>Need a fresh fade? Find a location in your area</h1>
 </template>
 <script>
 export default{ 

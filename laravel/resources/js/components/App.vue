@@ -1,9 +1,9 @@
 <template>
     <body>
         <nav>
-            <RouterLink :to="{ path: '/Appointment' }">Appointment</RouterLink>
-            <RouterLink :to="{ path: '/Dashboard' }">Dashboard</RouterLink>
-            <RouterLink :to="{ path: '/About' }">About</RouterLink>
+            <RouterLink class="nav-item" :to="{ path: '/Dashboard' }">Dashboard</RouterLink>
+            <RouterLink class="nav-item" :to="{ path: '/Appointment' }">Appointment</RouterLink>
+            <RouterLink class="nav-item" :to="{ path: '/About' }">About</RouterLink>
         </nav>
         <!--Components-->
     </body>
