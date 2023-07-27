@@ -1,8 +1,4 @@
-//TODO Look into interia
-<template>
-    <h1>HI LOL</h1>
-</template>
+<template></template>
 <script>
-
 </script>
 <style></style>

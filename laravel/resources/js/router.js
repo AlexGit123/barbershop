@@ -5,7 +5,7 @@ import Appointment from "./components/Appointment.vue";
 import About from "./components/About.vue";
 
 let routes = [
-    { path: "/Dashboard", name: "Dashboard", component: Dashboard },
+    { path: "/", name: "Dashboard", component: Dashboard },
     { path: "/Appointment", name: "Appointment", component: Appointment },
     { path: "/About", name: "About", component: About },
 ];

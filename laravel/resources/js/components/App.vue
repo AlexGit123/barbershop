@@ -1,7 +1,7 @@
 <template>
     <body>
         <nav>
-            <RouterLink class="nav-item" :to="{ path: '/Dashboard' }">Dashboard</RouterLink>
+            <RouterLink class="nav-item" :to="{ path: '/' }">Dashboard</RouterLink>
             <RouterLink class="nav-item" :to="{ path: '/Appointment' }">Appointment</RouterLink>
             <RouterLink class="nav-item" :to="{ path: '/About' }">About</RouterLink>
         </nav>

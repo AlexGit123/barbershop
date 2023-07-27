@@ -6,9 +6,16 @@ body{
 }
 
 nav{
-    background-color: orange;
+    background-color: grey;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .nav-item{
-    padding: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.dash-button{
+   @apply rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg bg-blue-800 border-blue-900 text-white;
 }
