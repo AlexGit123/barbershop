@@ -19,3 +19,12 @@ nav{
 .dash-button{
    @apply rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg bg-blue-800 border-blue-900 text-white;
 }
+
+/* TODO change blue */
+.search-bar{
+    @apply block p-2 text-blue-900 border border-blue-300 rounded-lg bg-blue-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-blue-700 dark:border-blue-600 dark:placeholder-blue-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+}
+
+.footer{ 
+    
+}
