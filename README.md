@@ -6,8 +6,9 @@ The goal of this application is to allow barbershop owners to transition their a
 
 ## Made with
 <img src="https://skillicons.dev/icons?i=vue" />&nbsp;
-<img src="https://skillicons.dev/icons?i=javascript" />&nbsp;
+<img src="https://skillicons.dev/icons?i=tailwind" />&nbsp;
 <img src="https://skillicons.dev/icons?i=laravel" />&nbsp;
+<img src="https://skillicons.dev/icons?i=javascript" />&nbsp;
 <img src="https://skillicons.dev/icons?i=php" />&nbsp;
 <img src="https://skillicons.dev/icons?i=mongodb" />&nbsp;
 <img src="https://skillicons.dev/icons?i=vscode" />&nbsp;
