@@ -1,4 +1,4 @@
-//TODO Set-up Google maps API key
+//TODO Fix type of map - location search needed
 //TODO Add footer icons
 <template>
     <body>
@@ -8,29 +8,23 @@
                 <div class="flex flex-col">
                     <div class="container">
                         <!-- Header -->
-
                         <!-- Cards -->
                         <div class="flex flex-wrap mt-2 md:mt-0 -mx-4">
-
                             <!-- Card #1 -->
                             <div class="w-full md:w-full lg:w-4/12 px-4 mb-4 flex">
                                 <div class="border border-gray-300 rounded p-4">
                                     <div class="flex flex-col">
-                                        <!-- Image -->
-                                        <a href="#" class="mx-auto">
-                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                                src="images/Berlin.svg">
-                                        </a>
-
+                                        <!-- Map -->
+                                        <Map />
                                         <!-- Details -->
-                                        <div class="text-center mt-6">
+                                        <div class="text-center mt-6 pt-10">
                                             <!-- Caption -->
-                                            <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                            <!-- <h1 class="text-gray-900 text-xl font-bold mb-1">
                                                 Search for barbershops in your area
-                                            </h1>
+                                            </h1> -->
                                             <!-- Input -->
-                                            <label for="large-input" class="text-gray-700 font-light mb-2">Search
-                                                for a location near you
+                                            <label for="large-input" class="text-gray-700 font-light mb-2">
+                                                Search for a location near you
                                             </label>
                                             <div class="flex justify-center">
                                                 <input type="text" id="large-input" class="search-bar" />
@@ -118,5 +112,12 @@
     </body>
 </template>
 <script>
+import Map from '/resources/js/components/Map.vue';
+
+export default {
+    components: {
+        Map,
+    },
+}
 </script>
 <style></style>
