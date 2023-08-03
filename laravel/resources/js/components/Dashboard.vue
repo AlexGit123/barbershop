@@ -1,77 +1,100 @@
 //TODO Set-up Google maps API key
-//TODO Replace card info - map, appointment, make listing
+//TODO Add footer icons
 <template>
     <body>
-
         <div class="background">
-            <div class="grid grid-cols-2 md:grid-cols-3">
-                <div class="pt-10 pl-10">
-                    <div
-                        class="max-w-sm bg-white border border-gray-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="p-5">
-                            <svg>
-                                <image href="images/Berlin.svg"></image>
-                            </svg>
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Need a haircut?
-                            </h5>
-                            <label for="large-input"
-                                class="block mb-2 text-sm font-medium text-white-900 dark:text-black ">Search
-                                for a location near you
-                            </label>
+            <!-- Cards Container -->
+            <div class="flex items-center justify-center min-h-screen bg-blue py-12 md:py-24">
+                <div class="flex flex-col">
+                    <div class="container">
+                        <!-- Header -->
 
-                            <div class="flex justify-left">
-                                <input type="text" id="large-input" class="search-bar">
-                            </div>
-                            <div class="flex justify-center pt-10">
-                                <button class="dash-button">Home Page</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <!-- Cards -->
+                        <div class="flex flex-wrap mt-2 md:mt-0 -mx-4">
 
-                <div class="pt-10 pl-10">
-                    <div
-                        class="max-w-sm bg-white border border-gray-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="p-5">
-                            <svg>
-                                <image href="images/Berlin.svg"></image>
-                            </svg>
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Need a haircut?
-                            </h5>
-                            <label for="large-input"
-                                class="block mb-2 text-sm font-medium text-white-900 dark:text-black ">Search
-                                for a location near you
-                            </label>
+                            <!-- Card #1 -->
+                            <div class="w-full md:w-full lg:w-4/12 px-4 mb-4 flex">
+                                <div class="border border-gray-300 rounded p-4">
+                                    <div class="flex flex-col">
+                                        <!-- Image -->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/Berlin.svg">
+                                        </a>
 
-                            <div class="flex justify-left">
-                                <input type="text" id="large-input" class="search-bar">
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Caption -->
+                                            <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                                Search for barbershops in your area
+                                            </h1>
+                                            <!-- Input -->
+                                            <label for="large-input" class="text-gray-700 font-light mb-2">Search
+                                                for a location near you
+                                            </label>
+                                            <div class="flex justify-center">
+                                                <input type="text" id="large-input" class="search-bar" />
+                                            </div>
+                                            <!-- Button -->
+                                            <div class="flex justify-center pt-5">
+                                                <button class="dash-button">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex justify-center pt-10">
-                                <button class="dash-button">Home Page</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="pt-10 pl-10">
-                    <div
-                        class="max-w-sm bg-white border border-gray-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="p-5">
-                            <svg>
-                                <image href="images/Berlin.svg"></image>
-                            </svg>
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Need a haircut?
-                            </h5>
-                            <label for="large-input"
-                                class="block mb-2 text-sm font-medium text-white-900 dark:text-black ">Search
-                                for a location near you
-                            </label>
+                            <!-- Card #2 -->
+                            <div class="w-full md:w-full lg:w-4/12 px-4 mb-4 flex">
+                                <div class="border border-gray-300 rounded p-4">
+                                    <div class="flex flex-col">
+                                        <!-- Image -->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/haircut.jpg">
+                                        </a>
 
-                            <div class="flex justify-left">
-                                <input type="text" id="large-input" class="search-bar">
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Caption -->
+                                            <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                                Want to make an appointment?
+                                            </h1>
+
+                                            <!-- Title -->
+                                            <div class="text-gray-700 font-light mb-2">
+                                                Click here
+                                            </div>
+                                            <div class="flex justify-center pt-10">
+                                                <button class="dash-button">Appointment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex justify-center pt-10">
-                                <button class="dash-button">Home Page</button>
+
+                            <!-- Card #3 -->
+                            <div class="w-full md:w-full lg:w-4/12 px-4 mb-4 flex">
+                                <div class="border border-gray-300 rounded p-4">
+                                    <div class="flex flex-col">
+                                        <!-- Avatar 1980 x 1192-->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/shop.jpg">
+                                        </a>
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Caption -->
+                                            <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                                Want to list your barbershop?
+                                            </h1>
+                                            <!-- Button -->
+                                            <div class="text-gray-700 font-light mb-2">
+                                                Space
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,7 +102,7 @@
             </div>
 
             <!--footer-->
-            <div>
+            <!-- <div>
                 <div class="flex justify-left">
                     <div class="mb-6">
                         <div class="flex justify-left"></div>
@@ -90,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
 </template>
