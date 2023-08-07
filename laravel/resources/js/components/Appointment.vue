@@ -1,8 +1,8 @@
 <template>
-    <h1>Need a fresh fade? Find a location in your area</h1>
+    <h1>Check availabilities and make an appointment</h1>
 </template>
 <script>
-export default{ 
+export default {
     name: 'Appointment'
 }
 </script>
